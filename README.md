@@ -86,7 +86,7 @@
 
 1. **Клонируйте репозиторий**:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/Wyyshnya/tron_info
    cd tron_info_service
 
 2. **Создайте виртуальное окружение и установите зависимости**:
