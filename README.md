@@ -67,7 +67,7 @@
 
 ## Требования
 
-- **Python**: 3.8 или выше.
+- **Python**: 3.11 или выше.
 - **Docker**: Для запуска через Docker Compose.
 - **API-ключ TronGrid**: Получите на [TronGrid](https://www.trongrid.io/).
 - **Зависимости** (см. `requirements.txt`):
