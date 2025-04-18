@@ -2,14 +2,15 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     ports:
       - "8000:8000"
     volumes:
-      - ./tron_info.db:/app/tron_info.db
-      - ./.env:/app/.env
+      - type: file
+        source: ./tron_info.db
+        target: /app/tron_info.db
+      - type: file
+        source: ./.env
+        target: /app/.env
     environment:
       - PYTHONUNBUFFERED=1
-    command: uvicorn main:app --host 0.0.0.0 --port 8000
