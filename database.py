@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # URL базы данных из переменной окружения или SQLite по умолчанию
-SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./tron_info.db")
+SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./data/tron_info.db")
 
 # Создаём асинхронный движок для взаимодействия с базой данных
 engine = create_async_engine(SQLALCHEMY_DATABASE_URL, echo=False)
